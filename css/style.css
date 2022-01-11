@@ -1,3 +1,6 @@
+body {
+    background-color: #0d23a1;
+}
 .nav {
     display: flex;
     height: 48px;
@@ -16,18 +19,56 @@
     position: absolute;
     font-size: 18px;
     font-weight: bold;
-    
     font-family: sans-serif;
     left: 30px;
 }
-
 .nav_mobile-btn {
     position: absolute;
     font-size: 40px;
-    
     right: 24px;
 }
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 24px;
 
-body {
-    background-color: #0d23a1;
+    position: absolute;
+    width: 375px;
+    height: 1316.15px;
+    left: 0px;
+    top: 19px;
+    
+}
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position:static;
+    width: 340px;
+    height: 210px;
+    left: 24;
+    top:120px;
+    margin: 40px 0px;
+}
+.my_name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #7D73FC;
+
+    margin: 12px 0px;
+}
+.roll {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #EDECFF;
+    margin: 12px 0px;
 }
