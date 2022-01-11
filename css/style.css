@@ -1,1 +1,33 @@
+.nav {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    
+    
+}
+.nav_mobile {
+    color: #fff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+}
+.logo {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    
+    font-family: sans-serif;
+    left: 30px;
+}
 
+.nav_mobile-btn {
+    position: absolute;
+    font-size: 40px;
+    
+    right: 24px;
+}
+
+body {
+    background-color: #0d23a1;
+}
