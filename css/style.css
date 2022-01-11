@@ -72,3 +72,15 @@ body {
     color: #EDECFF;
     margin: 12px 0px;
 }
+.sup_text {
+    display: flex;
+}
+.st {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #C8C8D4;
+    width: 327px;
+
+    margin: 24px 0px;
+}
