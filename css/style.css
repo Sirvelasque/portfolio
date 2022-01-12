@@ -37,7 +37,6 @@ body {
   position: absolute;
   width: 375px;
   height: 1316.15px;
-  left: 0px;
   top: 19px;
 }
 
@@ -45,13 +44,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  position:static;
+  position: static;
   width: 340px;
   height: 210px;
-  left: 24;
-  top:20px;
-  margin: 0px 0px;
 }
 
 .my_name {
@@ -61,8 +56,9 @@ body {
   line-height: 72px;
   text-align: center;
   letter-spacing: 0.37px;
-  color: #7D73FC;
-  margin: 12px 0px;
+  color: #7d73fc;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .roll {
@@ -70,8 +66,9 @@ body {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #EDECFF;
-  margin: 12px 0px;
+  color: #edecff;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .sup_text {
@@ -85,7 +82,8 @@ body {
   text-align: center;
   color: #C8C8D4;
   width: 327px;
-  margin: 24px 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .divider_a {
@@ -102,7 +100,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 0px;
   position: static;
   width: 303px;
   height: 462.15px;
@@ -116,20 +113,20 @@ body {
 .sup_li {
   font-size: 15px;
   line-height: 24px;
-  color: #F5F5FF;
-  margin: 12px 0px;
+  color: #f5f5ff;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .list_title {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #9490FF;
-  margin: 0px 0px;
+  color: #9490ff;
 }
 
 .sup_items {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 200px;
   height: 104px;
@@ -144,8 +141,8 @@ body {
   flex-direction: row;
   align-items: center;
   height: 40px;
-  top: 0px;
-  margin: 24px 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .work-btn {
@@ -165,7 +162,7 @@ body {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #A2A3AE;
+  color: #a2a3ae;
   text-decoration: none;
 }
 
@@ -182,17 +179,16 @@ body {
   width: 160px;
   height:  160px;
   left: -106px;
-  top: 0px;
   filter: blur(50px);
-  background-color: #EDECFF;
+  background-color: #edecff;
 }
 
 .elipse_2 {
   position: absolute;
   width: 68px;
-  height:  68px;
+  height: 68px;
   left: 336px;
   top: 495px;
   filter: blur(50px);
-  background-color: #EDECFF;
+  background-color: #edecff;
 }
