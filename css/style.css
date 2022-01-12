@@ -50,8 +50,8 @@ body {
     width: 340px;
     height: 210px;
     left: 24;
-    top:120px;
-    margin: 40px 0px;
+    top:20px;
+    margin: 0px 0px;
 }
 .my_name {
     font-style: normal;
@@ -87,11 +87,11 @@ body {
 }
 .divider_a {
     position: absolute;
-    top:calc(50% - 185px);
+    top:calc(50% - 265px);
 }
 .divider_b {
     position: absolute;
-    top:calc(50% - 185px + 505px);
+    top:calc(50% - 265px + 505px);
 }
 .sup_skills {
     display: flex;
@@ -163,4 +163,30 @@ body {
     text-align: center;
     color: #A2A3AE;
     text-decoration: none;
+}
+
+.top_circles {
+    position: absolute;
+    width: 513px;
+    height: 563px;
+    left: 5px;
+    top: 97px;
+}
+.elipse_1{
+    position: absolute;
+    width: 160px;
+    height:  160px;
+    left: -106px;
+    top: 0px;
+    filter: blur(50px);
+    background-color: #EDECFF;
+}
+.elipse_2{
+    position: absolute;
+    width: 68px;
+    height:  68px;
+    left: 336px;
+    top: 495px;
+    filter: blur(50px);
+    background-color: #EDECFF;
 }
