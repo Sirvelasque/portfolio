@@ -86,4 +86,5 @@ body {
 }
 .divider {
     position: absolute;
+    top:calc(50% - 180px);
 }
