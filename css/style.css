@@ -1,5 +1,5 @@
 body {
-    background-color: #0d23a1;
+    background-color: #191765;
 }
 .nav {
     display: flex;
@@ -83,4 +83,7 @@ body {
     width: 327px;
 
     margin: 24px 0px;
+}
+.divider {
+    position: absolute;
 }
