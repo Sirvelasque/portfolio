@@ -4,16 +4,13 @@ body {
 .nav {
     display: flex;
     height: 48px;
-    width: 100%;
-    
-    
+    width: 100%; 
 }
 .nav_mobile {
     color: #fff;
     display: flex;
     width: 100%;
     align-items: center;
-   
 }
 .logo {
     position: absolute;
@@ -32,20 +29,17 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 120px 24px;
-
     position: absolute;
     width: 375px;
     height: 1316.15px;
     left: 0px;
     top: 19px;
-    
 }
 .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    
     position:static;
     width: 340px;
     height: 210px;
@@ -61,7 +55,6 @@ body {
     text-align: center;
     letter-spacing: 0.37px;
     color: #7D73FC;
-
     margin: 12px 0px;
 }
 .roll {
@@ -82,16 +75,15 @@ body {
     text-align: center;
     color: #C8C8D4;
     width: 327px;
-
     margin: 24px 0px;
 }
 .divider_a {
     position: absolute;
-    top:calc(50% - 265px);
+    top: calc(50% - 265px);
 }
 .divider_b {
     position: absolute;
-    top:calc(50% - 265px + 505px);
+    top: calc(50% - 265px + 505px);
 }
 .sup_skills {
     display: flex;
@@ -154,7 +146,7 @@ body {
     align-self: center;
 
 }
-.work-btn a{
+.work-btn a {
     width: 47px;
     height: 32px;
     top: 4px;
@@ -172,7 +164,7 @@ body {
     left: 5px;
     top: 97px;
 }
-.elipse_1{
+.elipse_1 {
     position: absolute;
     width: 160px;
     height:  160px;
@@ -181,7 +173,7 @@ body {
     filter: blur(50px);
     background-color: #EDECFF;
 }
-.elipse_2{
+.elipse_2 {
     position: absolute;
     width: 68px;
     height:  68px;
