@@ -74,6 +74,7 @@ body {
 }
 .sup_text {
     display: flex;
+    flex-direction: column;
 }
 .st {
     font-size: 20px;
@@ -84,7 +85,42 @@ body {
 
     margin: 24px 0px;
 }
-.divider {
+.divider_a {
     position: absolute;
-    top:calc(50% - 180px);
+    top:calc(50% - 185px);
+}
+.divider_b {
+    position: absolute;
+    top:calc(50% - 185px + 505px);
+}
+.sup_skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 303px;
+    height: 462.15px;
+}
+.sup_list {
+    list-style-type: none;
+    width: 100px;
+   
+}
+.sup_li {
+    
+    font-size: 15px;
+    line-height: 24px;
+    color: #F5F5FF;
+    margin: 12px 0px;
+
+}
+.list_title {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #9490FF;
+    margin: 0px 0px;
 }
