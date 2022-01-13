@@ -138,13 +138,19 @@ h2 {
 }
 
 .social_media {
+  padding-right: 15%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   height: 40px;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+.social_media li{
+  padding: 2px 10px;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .work-btn {
