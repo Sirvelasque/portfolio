@@ -97,8 +97,6 @@ h2 {
   top: calc(50% - 240px + 505px);
 }
 
-
-
 .sup_skills {
   display: flex;
   flex-wrap: wrap;
@@ -231,7 +229,62 @@ h2 {
 .works_container {
   margin-top: 48px;
   display: grid;
+  grid-row-gap: 40px;
   grid-template-rows: repeat(4,729px);
   grid-template-columns: 327px; 
 }
 
+.project{
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+}
+
+.work_img {
+  min-width: 326px;
+  width: 327px;
+  height: 236px;
+  background: linear-gradient(0deg, #f9f9f9, #f9f9f9);
+  margin-bottom: 20px;
+}
+
+.works_titles{
+  width: 327px;
+  height: 50px;
+
+  margin: 35;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+  align-items: center;
+  justify-self: center;
+  text-justify: center;
+}
+
+.project_st {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+}
+
+.work_tools_tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 40px;
+}
+
+.tool_tag {
+  text-align: center;
+  padding: 10px 0;
+  flex-grow: 1;
+  font-size: 15px;
+  line-height: 20px;
+  border-left: 2px solid #555555;
+  color: #ffffff;
+}
