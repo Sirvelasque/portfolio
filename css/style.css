@@ -306,7 +306,12 @@ h2 {
 .project_btn:hover {
   box-shadow: 0 8px 16px 0 rgba(125, 115, 252, 0.48);
 }
+
 .project_btn:active {
   background: #5e42d7;
   box-shadow: none;
+}
+
+.project_btn:disabled {
+  background: #2a2b33;
 }
