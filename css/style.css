@@ -276,6 +276,7 @@ h2 {
   align-items: center;
   width: 327px;
   height: 40px;
+  margin:24px 0;
 }
 
 .tool_tag {
@@ -286,4 +287,26 @@ h2 {
   line-height: 20px;
   border-left: 2px solid #555555;
   color: #ffffff;
+}
+
+.project_btn {
+  align-items: center;
+  padding: 12px;
+  width: 89px;
+  height: 48px;
+  background: #7d73fc;
+  order:3;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #edecff;
+}
+
+.project_btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(125, 115, 252, 0.48);
+}
+.project_btn:active {
+  background: #5e42d7;
+  box-shadow: none;
 }
