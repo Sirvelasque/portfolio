@@ -232,6 +232,6 @@ h2 {
   margin-top: 48px;
   display: grid;
   grid-template-rows: repeat(4,729px);
-  grid-template-columns: 327px;
-  
+  grid-template-columns: 327px; 
 }
+
