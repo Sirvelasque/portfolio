@@ -321,6 +321,7 @@ h2 {
 }
 
 .work_tools_tags {
+  padding-left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -332,6 +333,7 @@ h2 {
 }
 
 .tool_tag {
+  list-style-type: none;
   text-align: center;
   padding: 10px 0;
   flex-grow: 1;
