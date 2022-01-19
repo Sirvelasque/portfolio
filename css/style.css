@@ -388,17 +388,20 @@ h2 {
 
 }
 #name {
-  width: 100%;
+  padding: 0 16px;
+  width: 291px;
   height: 48px;
 }
 
 #email {
-  width: 100%;
+  padding: 0 16px;
+  width: 291px;
   height: 48px;
 }
 
-#messages {
-  width: 100%;
+#message {
+  padding: 15px 16px;
+  width: 293px;
   height: 148px;
 }
 
@@ -413,7 +416,13 @@ h2 {
   height: 107px;
 }
 
-
 .form_container li {
-  list-style: none;
+  list-style-type: none;
+  width: 327px;
+  margin: 24px 0;
+}
+
+.form_container ul {
+  padding-left: 0;
+  width: 327px;
 }
