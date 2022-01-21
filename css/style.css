@@ -15,27 +15,25 @@ body {
   width: 100%;
   align-items: center;
 }
+
 .logo {
   animation-duration: 2s;
   animation-name: rotate;
-}
-
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-.logo {
   position: absolute;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   left: 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav_mobile-btn {
@@ -160,10 +158,6 @@ h2 {
   height: 40px;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-.social_media li:hover {
-  transform: scale(1.03);
 }
 
 .social_media li {
@@ -447,6 +441,10 @@ h2 {
   align-items: center;
   padding-left: 0;
   width: 327px;
+}
+
+.social_media li:hover {
+  transform: scale(1.03);
 }
 
 footer {
