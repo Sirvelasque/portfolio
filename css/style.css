@@ -315,7 +315,7 @@ h2 {
 
 .work_img {
   min-width: 320px;
-  width: 322px;
+  width: 95%;
   height: 236px;
   background: linear-gradient(0deg, #f9f9f9, #f9f9f9);
   margin-bottom: 20px;
@@ -462,7 +462,7 @@ footer {
 
 .divider_c {
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: #3a3837;
 }
 
@@ -484,7 +484,7 @@ footer {
   color: #ebebff;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 930px) {
   .sup_items {
     width: 75%;
     flex-direction: row;
@@ -497,5 +497,36 @@ footer {
 
   .works_head, .works_container {
     width: 80%;
+  }
+
+  .works_container{
+    grid-template-columns: 100%;
+  }
+
+  .project {
+    height: 448px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .work_img {
+    height: 100%;
+    width: 59%;
+
+  }
+
+  .sup_works {
+    margin-left: 4%;
+    width: 36%;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .reverse .sup_works{
+    margin-left: 0;
+    margin-right: 4%;
+    min-width: 275px;
   }
 }
