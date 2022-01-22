@@ -518,10 +518,11 @@ h2 {
 .form_container li {
   list-style-type: none;
   width: 327px;
-  margin: 12px 0;
+  margin: 6px 0;
 }
 
 .form_container ul {
+  margin: 5px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -648,7 +649,7 @@ footer {
   }
 
   #message {
-    width: 100%;
+    width: 100.5%;
   }
 
   #name {
@@ -665,11 +666,18 @@ footer {
   }
 
   .form_container ul{
+    margin-top: 5px;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
+
+  .form_container li {
+    margin: 3px 0;
+  }
+
 
   .f_name li {
     width: 50%;
