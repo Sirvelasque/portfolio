@@ -150,7 +150,7 @@ h2 {
 }
 
 .social_media {
-  padding-right: 15%;
+  padding-right: 25px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -464,4 +464,11 @@ footer {
 .work_img:hover {
   transition-duration: 0.7s;
   transform: scale(1.05);
+}
+
+.my_email {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
