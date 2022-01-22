@@ -528,7 +528,6 @@ h2 {
   align-items: center;
   padding-left: 0;
   width: 100%;
-  
 }
 
 .social_media li:hover {
@@ -576,11 +575,11 @@ footer {
     display: flex;
   }
 
-  .works_head, .works_container {
+  .works_head,.works_container {
     width: 80%;
   }
 
-  .works_container{
+  .works_container {
     grid-template-columns: 100%;
   }
 
@@ -589,11 +588,10 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .work_img {
     height: 100%;
     width: 59%;
-
   }
 
   .sup_works {
@@ -605,13 +603,13 @@ footer {
     flex-direction: row-reverse;
   }
 
-  .reverse .sup_works{
+  .reverse .sup_works {
     margin-left: 0;
     margin-right: 4%;
     min-width: 270px;
   }
 
-  .m_br{
+  .m_br {
     display: none;
   }
 
@@ -620,9 +618,9 @@ footer {
     flex-wrap: wrap;
   }
 
-  .top_circles{
+  .top_circles {
     position: relative;
-    top:40px;
+    top: 40px;
     width: 100%;
   }
 
@@ -630,9 +628,6 @@ footer {
     position: relative;
     top: 550px;
     width: 100%;
-  }
-  .works {
-    height: fit-content;
   }
 
   #contact {
@@ -643,7 +638,7 @@ footer {
     width: 40%;
   }
 
-  #email, #message, #name, .form {
+  #email,#message,#name,.form {
     width: 100%;
   }
 
@@ -651,43 +646,38 @@ footer {
     display: block;
     width: 100%;
   }
-  
+
   .name {
     display: flex;
     width: 100%;
   }
 
-  .name li{
+  .name li {
     width: 100%;
   }
   
-
   .form_container li {
     width: 100%;
   }
 
-  .form_container lu {
-    flex-direction: row;
-  }
-
   footer {
-    top: 5090px
+    top: 5090px;
   }
 
-  .sup_text, .presentation {
+  .sup_text,.presentation {
     width: 50%;
   }
-  
+
   .sup_skills{
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height: auto;
   }
-  
+
   .divider_b {
     top: 735px
   }
-  
+
   .divider_a {
     top: calc(50% - 280px);
   }
@@ -696,5 +686,4 @@ footer {
     width: 100%;
     max-width: 448px;
   }
-
 }
