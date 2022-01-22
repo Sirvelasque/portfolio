@@ -310,10 +310,10 @@ h2 {
 
 .d_br_elipse_4 {
   position: relative;
-  width: 70.28px;
-  height: 261.6px;
-  left: 447px;
-  top: 830px;
+  width: 108px;
+  height: 402px;
+  left: 96%;
+  top: 370px;
   filter: blur(30px);
   background-color: #edecff;
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -324,19 +324,19 @@ h2 {
   position: relative;
   width: 308px;
   height: 155px;
-  left: 20px;
-  top: 1681px;
+  left: 5%;
+  top: 800px;
   filter: blur(40px);
-  background-color: rgba(237, 236, 255, 0.3);
+  background-color: rgba(237, 236, 255, 1);
 }
 
 .d_br_elipse_6 {
   position: relative;
-  width: 101.29px;
-  height: 377.04px;
-  left: 530px;
-  top: 2350px;
-  filter: blur(35px);
+  width: 246.29px;
+  height: 916.04px;
+  left: 95%;
+  top: 700px;
+  filter: blur(50px);
   background-color: #edecff;
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
@@ -619,5 +619,8 @@ footer {
     position: relative;
     top: 550px;
     width: 100%;
+  }
+  .works {
+    height: fit-content;
   }
 }
