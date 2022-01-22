@@ -578,15 +578,12 @@ footer {
   .works_head, {
     width: 80%;
   }
-  
+
   .works_container {
     width: 80%;
-  }
-
-  .works_container {
     grid-template-columns: 100%;
   }
-
+  
   .project {
     height: 448px;
     flex-direction: row;
@@ -645,15 +642,15 @@ footer {
   #email {
     width: 100%;
   }
-  
+
   #message, {
     width: 100%;
   }
-  
+
   #name {
     width: 100%;
   }
-  
+
   .form {
     width: 100%;
   }
@@ -671,7 +668,7 @@ footer {
   .name li {
     width: 100%;
   }
-  
+
   .form_container li {
     width: 100%;
   }
@@ -683,19 +680,19 @@ footer {
   .sup_text, {
     width: 50%;
   }
-  
+
   .presentation {
     width: 50%;
   }
 
-  .sup_skills{
+  .sup_skills {
     justify-content: center;
     width: 100%;
     height: auto;
   }
 
   .divider_b {
-    top: 735px
+    top: 735px;
   }
 
   .divider_a {
