@@ -484,6 +484,13 @@ h2 {
   height: 48px;
 }
 
+#last_name {
+  display: none;
+  padding: 0 16px;
+  width: 50%;
+  height: 48px;
+}
+
 #email {
   padding: 0 16px;
   width: 291px;
@@ -510,14 +517,17 @@ h2 {
 .form_container li {
   list-style-type: none;
   width: 327px;
-  margin: 24px 0;
+  margin: 12px 0;
 }
 
 .form_container ul {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   padding-left: 0;
-  width: 327px;
+  width: 100%;
+  
 }
 
 .social_media li:hover {
@@ -623,4 +633,56 @@ footer {
   .works {
     height: fit-content;
   }
+
+  #contact {
+    top: 4200px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form_container {
+    width: 40%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #last_name {
+    display: block;
+    width: 100%;
+  }
+  
+  .name {
+    display: flex;
+    width: 100%;
+  }
+
+  .name li{
+    width: 100%;
+  }
+  
+
+  .form_container li {
+    width: 100%;
+  }
+
+  .form_container lu {
+    flex-direction: row;
+  }
+
+  footer {
+    top: 5090px
+  }
+  
 }
