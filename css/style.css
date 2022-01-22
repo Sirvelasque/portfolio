@@ -88,6 +88,7 @@ h2 {
 .sup_text {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .st {
@@ -638,23 +639,11 @@ footer {
     top: 4200px;
   }
 
-  form {
-    width: 100%;
-  }
-
   .form_container {
     width: 40%;
   }
 
-  #email {
-    width: 100%;
-  }
-
-  #message {
-    width: 100%;
-  }
-
-  #name {
+  #email, #message, #name, .form {
     width: 100%;
   }
 
@@ -684,5 +673,28 @@ footer {
   footer {
     top: 5090px
   }
+
+  .sup_text, .presentation {
+    width: 50%;
+  }
   
+  .sup_skills{
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .divider_b {
+    top: 735px
+  }
+  
+  .divider_a {
+    top: calc(50% - 280px);
+  }
+
+  .st {
+    width: 100%;
+    max-width: 448px;
+  }
+
 }
