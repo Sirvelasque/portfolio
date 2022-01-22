@@ -583,7 +583,7 @@ footer {
     width: 80%;
     grid-template-columns: 100%;
   }
-  
+
   .project {
     height: 448px;
     flex-direction: row;
