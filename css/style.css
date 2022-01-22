@@ -584,6 +584,10 @@ footer {
     grid-template-columns: 100%;
   }
 
+  .works {
+    height: auto;
+  }
+
   .project {
     height: 448px;
     flex-direction: row;
@@ -656,20 +660,22 @@ footer {
   }
 
   #last_name {
-    display: block;
+    display: inline-block;
     width: 100%;
   }
 
-  .name {
+  .form_container ul{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
 
-  .name li {
-    width: 100%;
+  .f_name li {
+    width: 50%;
   }
 
-  .form_container li {
+  .e_text li {
     width: 100%;
   }
 
