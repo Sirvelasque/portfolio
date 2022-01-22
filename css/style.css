@@ -575,7 +575,11 @@ footer {
     display: flex;
   }
 
-  .works_head,.works_container {
+  .works_head, {
+    width: 80%;
+  }
+  
+  .works_container {
     width: 80%;
   }
 
@@ -638,7 +642,19 @@ footer {
     width: 40%;
   }
 
-  #email,#message,#name,.form {
+  #email {
+    width: 100%;
+  }
+  
+  #message, {
+    width: 100%;
+  }
+  
+  #name {
+    width: 100%;
+  }
+  
+  .form {
     width: 100%;
   }
 
@@ -664,7 +680,11 @@ footer {
     top: 5090px;
   }
 
-  .sup_text,.presentation {
+  .sup_text, {
+    width: 50%;
+  }
+  
+  .presentation {
     width: 50%;
   }
 
