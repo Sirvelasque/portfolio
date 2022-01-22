@@ -460,6 +460,12 @@ footer {
   top: 5390px;
 }
 
+.divider_c {
+  width: 100%;
+  height: 1px;
+  background: #3a3837;
+}
+
 .divider_d {
   width: 100%;
   height: 1px;
@@ -478,13 +484,18 @@ footer {
   color: #ebebff;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .sup_items {
+    width: 75%;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .l-btn {
     display: flex;
+  }
+
+  .works_head, .works_container {
+    width: 80%;
   }
 }
