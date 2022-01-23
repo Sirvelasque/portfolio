@@ -314,7 +314,7 @@ h2 {
   width: 108px;
   height: 402px;
   left: 96%;
-  top: 370px;
+  top: 170px;
   filter: blur(30px);
   background-color: #edecff;
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -326,7 +326,7 @@ h2 {
   width: 308px;
   height: 155px;
   left: 5%;
-  top: 800px;
+  top: 400px;
   filter: blur(40px);
   background-color: rgba(237, 236, 255, 1);
 }
@@ -336,7 +336,7 @@ h2 {
   width: 246.29px;
   height: 916.04px;
   left: 95%;
-  top: 700px;
+  top: 300px;
   filter: blur(50px);
   background-color: #edecff;
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
@@ -589,14 +589,18 @@ footer {
   .works_container {
     width: 80%;
     grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 500px);
   }
 
   .works {
     height: auto;
+    top: 900px
   }
 
   .project {
-    height: 448px;
+    padding: 12px 0;
+    align-content: stretch;
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -638,12 +642,12 @@ footer {
 
   .middle_circles {
     position: relative;
-    top: 550px;
+    top: 150px;
     width: 100%;
   }
 
   #contact {
-    top: 4200px;
+    top: 3130px;
   }
 
   .form_container {
