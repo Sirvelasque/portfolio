@@ -665,7 +665,7 @@ footer {
     width: 100%;
   }
 
-  .form_container ul{
+  .form_container ul {
     margin-top: 5px;
     margin-bottom: 0;
     display: flex;
@@ -677,7 +677,6 @@ footer {
   .form_container li {
     margin: 3px 0;
   }
-
 
   .f_name li {
     width: 50%;
