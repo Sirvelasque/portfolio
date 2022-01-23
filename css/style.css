@@ -572,6 +572,7 @@ footer {
     padding: 0;
     border: 0;
   }
+
   .sup_items {
     width: 75%;
     flex-direction: row;
@@ -594,7 +595,7 @@ footer {
 
   .works {
     height: auto;
-    top: 900px
+    top: 900px;
   }
 
   .project {
