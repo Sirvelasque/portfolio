@@ -8,7 +8,7 @@ Here you can find information about me such as:
 
 ## Live Demo 
 
-[https://sirvelasque.github.io](https://sirvelasque.github.io/portfolio/)
+[sirvelasque.github.io](https://sirvelasque.github.io/portfolio/)
 
 ## Built with
 - Html
