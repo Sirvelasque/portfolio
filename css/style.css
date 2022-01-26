@@ -473,6 +473,10 @@ h2 {
   top: 4520px;
 }
 
+.contact_sup_text-label {
+  display: none;
+}
+
 .contact_sup_text_container {
   display: flex;
   padding: 0 20px;
