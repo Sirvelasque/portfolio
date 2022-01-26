@@ -294,7 +294,7 @@ h2 {
   width: 226px;
   height: 226px;
   left: 75%;
-  top: 125px;
+  top: 20px;
   filter: blur(50px);
   background-color: #edecff;
 }
@@ -444,7 +444,7 @@ h2 {
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
-  color: #edecff;
+  color: #1d1d2a;
 }
 
 .project_btn:hover {
@@ -471,6 +471,10 @@ h2 {
   width: 100%;
   height: 825px;
   top: 4520px;
+}
+
+.contact_sup_text-label {
+  display: none;
 }
 
 .contact_sup_text_container {

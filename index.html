@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YM82MKHNB"></script>
         <script>
@@ -10,7 +11,6 @@
     
           gtag('config', 'G-7YM82MKHNB');
         </script>
-    <meta charset="utf-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
       </div>
       
       <div class="sup_text">
-        <p class="st">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
+        <p class="st">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don't hestiate to contact me.</p>
         <img alt="divider vector" src="img/Vector.svg" class="divider_a">
 
       <div class="sup_skills">
@@ -167,24 +167,28 @@
       </div>
       <div class="contact_sup_text_container">
         <p class="contact_sup_text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding.
-           I’d love to help with it </p>
+           I'd love to help with it </p>
       </div>
       <div class="form_container">
         <form action="https://formspree.io/f/xqknednn" method="post">
           <ul class="f_name">
             <li>
-              <input type="text" id="name" name="Name" placeholder="name" maxlength="30" required>
+              <label for="name" id="name-label" class="contact_sup_text-label">Name</label>
+              <input aria-label="Name" type="text" id="name" name="Name" placeholder="name" maxlength="30" required>
             </li>
            
             <li>
+              <label for="name" id="Last_name-label" class="contact_sup_text-label">Last name</label>
               <input type="text" id="last_name" name="Name" placeholder="last name" maxlength="30" required>
             </li>
           </ul>
           <ul class="e_text"> 
             <li>
+              <label for="email" id="email-label" class="contact_sup_text-label">Email</label>
               <input type="email" id="email" name="E-mail" placeholder="Email" required>
             </li>
             <li>
+              <label for="email" id="message-label" class="contact_sup_text-label">Message</label>
               <textarea id="message" cols="40" rows="10" maxlength="500" required></textarea>
             </li>
             <li class="button">
