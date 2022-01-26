@@ -95,7 +95,7 @@ h2 {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #9a5bb3;
+  color: #C8C8D4;
   width: 327px;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -471,6 +471,10 @@ h2 {
   width: 100%;
   height: 825px;
   top: 4520px;
+}
+
+.contact_sup_text-label {
+  display: none;
 }
 
 .contact_sup_text_container {
