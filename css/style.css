@@ -1,6 +1,13 @@
+#menuContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+}
+
 body {
   background-color: #191765;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 8px 1px;
 }
 
@@ -23,7 +30,7 @@ body {
   position: absolute;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   left: 30px;
 }
 
@@ -404,7 +411,7 @@ h2 {
 }
 
 .project_st {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 28px;
   color: #dcdce8;
