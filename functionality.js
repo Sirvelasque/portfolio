@@ -1,68 +1,66 @@
-const hamburguer = document.getElementById("hamburguer");
+const hamburguer = document.getElementById('hamburguer');
 
 //Created all elements of the menu
-let menuContainer = document.createElement("nav");
-let exit = document.createElement("div");
-let item1_container = document.createElement("div");
-let item2_container = document.createElement("div");
-let item3_container = document.createElement("div");
-let item1 = document.createElement("a");
-let item2 = document.createElement("a");
-let item3 = document.createElement("a");
-let li = document.createElement("i");
-let nav_background2 = document.createElement("div")
-let nav_background1 = document.createElement("div")
-menuContainer.appendChild(item1_container);
-menuContainer.appendChild(item2_container);
-menuContainer.appendChild(item3_container);
+const menuContainer = document.createElement('nav');
+const item1Container = document.createElement('div');
+const item2Container = document.createElement('div');
+const item3Container = document.createElement('div');
+const item1 = document.createElement('a');
+const item2 = document.createElement('a');
+const item3 = document.createElement('a');
+const li = document.createElement('i');
+const navBackground2 = document.createElement('div')
+const navBackground1 = document.createElement('div')
+menuContainer.appendChild(item1Container);
+menuContainer.appendChild(item2Container);
+menuContainer.appendChild(item3Container);
 
 //Give classes and values
-nav_background1.classList.add('nav_elipse1');
-nav_background2.classList.add('nav_elipse2');
-menuContainer.appendChild(nav_background1);
-menuContainer.appendChild(nav_background2);
+navBackground1.classList.add('nav_elipse1');
+navBackground2.classList.add('nav_elipse2');
+menuContainer.appendChild(navBackground1);
+menuContainer.appendChild(navBackground2);
 menuContainer.id = "menuContainer";
 menuContainer.classList.add('display_none');
-li.classList.add('fas', 'fa-chevron-right')
 
-item1_container.classList.add('item_container')
+item1Container.classList.add('item_container')
 item1.classList.add('nav_text');
-item1.innerText='Portfolio';
+item1.innerText = 'Portfolio';
 item1.href="#works";
-item1_container.appendChild(item1);
-item1_container.appendChild(li);
+item1Container.appendChild(item1);
+item1Container.appendChild(li);
 
-item2_container.classList.add('item_container')
+item2Container.classList.add('item_container')
 item2.classList.add('nav_text');
-item2.innerText='About';
+item2.innerText = 'About';
 item2.href="#headline";
-item2_container.appendChild(item2);
-item1_container.appendChild(li);
+item2Container.appendChild(item2);
+item1Container.appendChild(li);
 
-item3_container.classList.add('item_container')
+item3Container.classList.add('item_container')
 item3.classList.add('nav_text');
-item3.innerText='Contact';
+item3.innerText = 'Contact';
 item3.href="#contact";
-item3_container.appendChild(item3);
-item1_container.appendChild(li);
+item3Container.appendChild(item3);
+item1Container.appendChild(li);
 //
 document.body.append(menuContainer);
 
 //bar icon click event
 
-hamburguer.addEventListener('click', function(){
+hamburguer.addEventListener('click', function() {
   menuContainer.classList.toggle('display');
   menuContainer.classList.toggle('display_none');
 })
-item1_container.addEventListener('click', function(){
+item1Container.addEventListener('click', function(){
   menuContainer.classList.toggle('display');
   menuContainer.classList.toggle('display_none');
 })
-item2_container.addEventListener('click', function(){
+item2Container.addEventListener('click', function() {
   menuContainer.classList.toggle('display');
   menuContainer.classList.toggle('display_none');
 })
-item3_container.addEventListener('click', function(){
+item3Container.addEventListener('click', function() {
   menuContainer.classList.toggle('display');
   menuContainer.classList.toggle('display_none');
-})
+});
