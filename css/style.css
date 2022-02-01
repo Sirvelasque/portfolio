@@ -3,6 +3,7 @@
   width: 100vw;
   background-color: white;
   position: fixed;
+  top:-100vh;
 }
 
 body {
@@ -25,6 +26,8 @@ body {
 }
 
 .logo {
+  top: 18px;
+  color: #fff;
   animation-duration: 2s;
   animation-name: rotate;
   position: absolute;
