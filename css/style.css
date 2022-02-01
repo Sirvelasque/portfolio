@@ -42,6 +42,8 @@ body {
 .item_container{
   margin: 4% 40px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav_text {
@@ -375,6 +377,29 @@ h2 {
   width: 246.29px;
   height: 916.04px;
   left: 95%;
+  top: 300px;
+  filter: blur(50px);
+  background-color: #edecff;
+  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+}
+
+.nav_elipse1 {
+  position: absolute;
+  width: 226.29px;
+  height: 446.04px;
+  top: 150px;
+  left: 30px;
+  filter: blur(40px);
+  background-color: rgba(237, 236, 255, 0.4);
+  transform: rotate(25.09deg);
+}
+
+.nav_elipse2 {
+  position: absolute;
+  width: 246.29px;
+  height: 916.04px;
+  left: 95%;
+  top:-800px;
   top: 300px;
   filter: blur(50px);
   background-color: #edecff;
