@@ -39,7 +39,7 @@ body {
   align-items: center;
 }
 
-.item_container{
+.item_container {
   margin: 4% 40px;
   width: 100%;
   display: flex;
@@ -399,7 +399,7 @@ h2 {
   width: 246.29px;
   height: 916.04px;
   left: 95%;
-  top:-800px;
+  top: -800px;
   top: 300px;
   filter: blur(50px);
   background-color: #edecff;
