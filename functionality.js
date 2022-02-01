@@ -20,7 +20,7 @@ navBackground1.classList.add('nav_elipse1');
 navBackground2.classList.add('nav_elipse2');
 menuContainer.appendChild(navBackground1);
 menuContainer.appendChild(navBackground2);
-menuContainer.id = "menuContainer";
+menuContainer.id = 'menuContainer';
 menuContainer.classList.add('display_none');
 
 item1Container.classList.add('item_container');
@@ -48,19 +48,12 @@ document.body.append(menuContainer);
 
 // bar icon click event
 
-hamburguer.addEventListener('click', function toggleNavManu() {
+function toggleNavManu() {
   menuContainer.classList.toggle('display');
   menuContainer.classList.toggle('display_none');
-})
-item1Container.addEventListener('click', function toggleNavManu(){
-  menuContainer.classList.toggle('display');
-  menuContainer.classList.toggle('display_none');
-})
-item2Container.addEventListener('click', function toggleNavManu() {
-  menuContainer.classList.toggle('display');
-  menuContainer.classList.toggle('display_none');
-})
-item3Container.addEventListener('click', function toggleNavManu() {
-  menuContainer.classList.toggle('display');
-  menuContainer.classList.toggle('display_none');
-});
+}
+
+hamburguer.addEventListener('click', toggleNavManu);
+item1Container.addEventListener('click', toggleNavManu);
+item2Container.addEventListener('click', toggleNavManu);
+item3Container.addEventListener('click', toggleNavManu);
