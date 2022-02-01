@@ -16,6 +16,8 @@ menuContainer.appendChild(item3_container);
 //Give classes and values
 menuContainer.id = "menuContainer";
 
+menuContainer.classList.add('display_none');
+
 item1_container.classList.add('item_container')
 item1.classList.add('nav_text');
 item1.innerText='Portfolio';
@@ -35,3 +37,10 @@ item3.href='https://www.google.pl';
 item3_container.appendChild(item3);
 //
 document.body.append(menuContainer);
+
+//bar icon click event
+
+hamburguer.addEventListener('click', function(){
+  menuContainer.classList.toggle('display');
+  menuContainer.classList.toggle('display_none');
+})

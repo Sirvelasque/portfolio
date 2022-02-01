@@ -8,14 +8,22 @@
   width: 100vw;
   background-color: #191765;
   position: fixed;
-  top: 0vh;
   padding: 70px 10px;
+  transition-duration: 0.5s;
 }
 
 body {
   background-color: #191765;
   font-family: "Roboto", sans-serif;
   margin: 8px 1px;
+}
+
+.display {
+  top: 0;
+}
+
+.display_none {
+  top: -120%;
 }
 
 .nav {
