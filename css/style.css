@@ -1,9 +1,15 @@
 #menuContainer {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  background-color: #191765;
   position: fixed;
-  top:-100vh;
+  top: 0vh;
+  padding: 70px 10px;
 }
 
 body {
@@ -23,6 +29,19 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
+}
+
+.item_container{
+  margin: 4% 40px;
+  width: 100%;
+}
+
+.nav_text {
+  text-decoration: none;
+  color: #edecff;
+  z-index: 5;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .logo {
@@ -48,9 +67,11 @@ body {
 }
 
 .nav_mobile-btn {
-  position: absolute;
+  z-index: 4;
+  position: fixed;
   font-size: 40px;
   right: 24px;
+  top: 18px;
 }
 
 .headline {
