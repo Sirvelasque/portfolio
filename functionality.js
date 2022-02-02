@@ -38,21 +38,21 @@ item1.classList.add('nav_text');
 item1.innerText = 'Portfolio';
 item1.href = '#works';
 item1Container.appendChild(item1);
-item1Container.appendChild(nav_arrow1);
+item1Container.appendChild(navArrow1);
 
 item2Container.classList.add('item_container');
 item2.classList.add('nav_text');
 item2.innerText = 'About';
 item2.href = '#headline';
 item2Container.appendChild(item2);
-item2Container.appendChild(nav_arrow2);
+item2Container.appendChild(navArrow2);
 
 item3Container.classList.add('item_container');
 item3.classList.add('nav_text');
 item3.innerText = 'Contact';
 item3.href = '#contact';
 item3Container.appendChild(item3);
-item3Container.appendChild(nav_arrow3);
+item3Container.appendChild(navArrow3);
 //
 document.body.append(menuContainer);
 
