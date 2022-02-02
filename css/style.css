@@ -84,6 +84,29 @@ body {
   top: 18px;
 }
 
+.nav_desktop {
+  z-index: 4;
+  display: none;
+  width: 260px;
+  font-size: 15px;
+  line-height: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  right: 30px;
+}
+
+.nav_desktop li {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.nav_desktop a{
+  text-decoration: none;
+  color: #dcdce8;
+  margin: 0 6px;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -639,6 +662,15 @@ footer {
     margin: 0;
     padding: 0;
     border: 0;
+  }
+
+  .nav_mobile {
+    display: none;
+  }
+
+  .nav_desktop {
+    position: fixed;
+    display: flex;
   }
 
   .sup_items {
