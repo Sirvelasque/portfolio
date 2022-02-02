@@ -8,9 +8,9 @@ const item3Container = document.createElement('div');
 const item1 = document.createElement('a');
 const item2 = document.createElement('a');
 const item3 = document.createElement('a');
-const nav_arrow1 = document.createElement('div');
-const nav_arrow2 = document.createElement('div');
-const nav_arrow3 = document.createElement('div');
+const navArrow1 = document.createElement('div');
+const navArrow2 = document.createElement('div');
+const navArrow3 = document.createElement('div');
 const navBackground2 = document.createElement('div');
 const navBackground1 = document.createElement('div');
 menuContainer.append(item2Container);
@@ -20,12 +20,12 @@ menuContainer.appendChild(item3Container);
 // Give classes and values
 menuContainer.id = 'menuContainer';
 menuContainer.classList.add('display_none');
-nav_arrow1.classList.add('nav_arrow');
-nav_arrow1.innerText = '>';
-nav_arrow2.classList.add('nav_arrow');
-nav_arrow2.innerText = '>';
-nav_arrow3.classList.add('nav_arrow');
-nav_arrow3.innerText = '>';
+navArrow1.classList.add('nav_arrow');
+navArrow1.innerText = '>';
+navArrow2.classList.add('nav_arrow');
+navArrow2.innerText = '>';
+navArrow3.classList.add('nav_arrow');
+navArrow3.innerText = '>';
 
 // background
 menuContainer.appendChild(navBackground1);
