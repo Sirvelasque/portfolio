@@ -117,7 +117,7 @@ console.log(workButtons);
 
 //  Creating pop up containers
 const popupContainer = document.createElement("section");
-popupContainer1.id = "popupContainer1";
+popupContainer.id = "popupContainer1";
 
 const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
@@ -125,12 +125,13 @@ const technologiesList = document.createElement("ul");
 
 let mobileModal = document.createElement("article");
 mobileModal.id = "mobileModal";
+popupContainer.appendChild(mobileModal);
 let title, description, skills=[], image, live, source;
 
 function popup (index){
   asignValues(index);
   templateuse();
-  document.body.append(mobileModal);
+  document.body.append(popupContainer);
 }
 
 function asignValues(index){
@@ -167,11 +168,4 @@ workButtons.forEach((btn, index) => {
   });
 });
 
-workbuttons [
-  {
-    firstbutton
-  }
-  {
-    secondbutton
-  }
-]
+
