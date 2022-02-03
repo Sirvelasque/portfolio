@@ -426,10 +426,10 @@ h2 {
 
 .nav_elipse2 {
   position: absolute;
-  width: 246.29px;
-  height: 316.04px;
-  left: 500px;
-  top: 140px;
+  width: 146.29px;
+  height: 216.04px;
+  left: 330px;
+  top: 580px;
   filter: blur(45px);
   background-color: #edecff;
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);

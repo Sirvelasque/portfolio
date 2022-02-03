@@ -116,15 +116,14 @@ workButtons = document.querySelectorAll(".work-buttom");
 console.log(workButtons);
 
 //  Creating pop up containers
-const popupContainer1 = document.createElement("section");
-const popupContainer2 = document.createElement("article");
+const popupContainer = document.createElement("section");
 popupContainer1.id = "popupContainer1";
 
 const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
 
 
-let mobileModal = document.createElement("section");
+let mobileModal = document.createElement("article");
 mobileModal.id = "mobileModal";
 let title, description, skills=[], image, live, source;
 
@@ -168,4 +167,11 @@ workButtons.forEach((btn, index) => {
   });
 });
 
-
+workbuttons [
+  {
+    firstbutton
+  }
+  {
+    secondbutton
+  }
+]
