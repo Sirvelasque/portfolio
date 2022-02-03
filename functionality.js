@@ -147,18 +147,15 @@ function templateuse(){
   mobileModal.innerHTML = `
 <h3 class="works_titles">${title}</h3>
 <i id="popupxIcon" class="fas fa-times"></i>
-<div id="popupImageContainer"></div>
-<p id=popupText>A daily selection of privately personalized reads;no accounts or
-sign-ups required. has been the industry's standard dummy text
-ever since the 1500s, when an unknown printer took a standard
-dummy text.</p>
+<div id="popupImageContainer"><img src="${image}"></div>
+<p id=popupText>${description}</p>
 <ul id="popupTools" class="work_tools_tags">
-  <li class="tool_tag">html</li>
-  <li class="tool_tag">Ruby on rails</li>
-  <li class="tool_tag">css</li>
+  <li class="tool_tag">${skills[0]}</li>
+  <li class="tool_tag">${skills[1]}</li>
+  <li class="tool_tag">${skills[2]}</li>
 </ul>
-  <button type="button" class="project_btn">See project</button>
-  <button type="button" class="project_btn">See project</button>
+  <a href="${live}"><button type="button" class="project_btn">See project</button></a>
+  <a href="${source}"><button type="button" class="project_btn">See project</button></a>
 `;
 
 }

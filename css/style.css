@@ -859,9 +859,12 @@ footer {
 }
 
 #popupImageContainer {
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 60%;
   height: 35%;
+}
+
+.popupTools {
+  padding-left: 10px;
 }
