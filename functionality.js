@@ -77,17 +77,17 @@ const cards = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
       image: 'img/SnapshootPortfolio.svg',
-      live: 'see live',
-      source: 'see source',
+      live: '#',
+      source: '#',
     },
     {
-      title: 'Multi-Po Stories',
+      title: 'Portfolio',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
       image: 'img/SnapshootPortfolio.svg',
-      live: 'see live',
-      source: 'see source',
+      live: 'https://sirvelasque.github.io/portfolio/',
+      source: 'https://github.com/Sirvelasque/portfolio',
     },
     {
       title: 'Multi-Post Stories',
@@ -95,8 +95,8 @@ const cards = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
       image: 'img/SnapshootPortfolio.svg',
-      live: 'see live',
-      source: 'see source',
+      live: '#',
+      source: '#',
     },
     {
       title: 'Multi-Post Stories',
@@ -111,7 +111,9 @@ const cards = [
 
 
 //
-const workButtons =
+let workButtons =[];
+workButtons = document.querySelectorAll(".work-buttom");
+console.log(workButtons);
 
 //  Creating pop up containers
 const popupContainer1 = document.createElement("section");
@@ -122,23 +124,27 @@ const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
 
 
-let mobileModal = document.querySelector(".mobal");
+let mobileModal = document.createElement("section");
 mobileModal.id = "mobileModal";
-let title, skills=[], image, live, source;
+let title, description, skills=[], image, live, source;
+
 function popup (index){
   asignValues(index);
-  document.body.appendChild(mobileModal);
+  templateuse();
+  document.body.append(mobileModal);
 }
 
 function asignValues(index){
   title = cards[index].title;
+  description = cards[index].description;
   skills = cards[index].skills;
   image = cards[index].image;
   live = cards[index].live;
   source = cards[index].source;
 }
 
-mobileModal.innerHTML = `
+function templateuse(){
+  mobileModal.innerHTML = `
 <h3 class="works_titles">${title}</h3>
 <i id="popupxIcon" class="fas fa-times"></i>
 <div id="popupImageContainer"></div>
@@ -155,24 +161,14 @@ dummy text.</p>
   <button type="button" class="project_btn">See project</button>
 `;
 
+}
+
 //
 
-
-
-// firstCardButton.addEventListener('click', Function() {
-
-// });
-
-// secondCardButton.addEventListener('click', Function() {
-
-// });
-
-// thirdCardButton.addEventListener('click', Function() {
-
-// });
-
-// fourthCardButton.addEventListener('click', Function() {
-
-// });
+workButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    popup(index);
+  });
+});
 
 

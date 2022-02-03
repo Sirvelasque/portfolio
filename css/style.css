@@ -859,10 +859,9 @@ footer {
 }
 
 #popupImageContainer {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60%;
   height: 35%;
-  background-image: url("../img/SnapshootPortfolio.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
