@@ -70,10 +70,9 @@ item1Container.addEventListener("click", toggleNavManu);
 item2Container.addEventListener("click", toggleNavManu);
 item3Container.addEventListener("click", toggleNavManu);
 
-let cards = [
+const cards = [
     {
       title: 'Multi-Pos Stories',
-      info: ['facebook', 'backend', '2015'],
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
@@ -83,7 +82,6 @@ let cards = [
     },
     {
       title: 'Multi-Po Stories',
-      info: ['facebook', 'full stack dev', '2015'],
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
@@ -93,7 +91,6 @@ let cards = [
     },
     {
       title: 'Multi-Post Stories',
-      info: ['facebook', 'backend', '2015'],
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
@@ -103,7 +100,6 @@ let cards = [
     },
     {
       title: 'Multi-Post Stories',
-      info: ['UBER', ' Lead Developer', '2015'],
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
       skills: ['html', 'css', 'javascript'],
@@ -115,10 +111,7 @@ let cards = [
 
 
 //
-const firstCardButton = document.getElementById("firstCardButton");
-const secondCardButton = document.getElementById("secondCardButton");
-const thirdCardButton = document.getElementById("thirdCardButton");
-const fourthCardButton = document.getElementById("fourthCardButton");
+const workButtons =
 
 //  Creating pop up containers
 const popupContainer1 = document.createElement("section");
@@ -128,9 +121,23 @@ popupContainer1.id = "popupContainer1";
 const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
 
+
 let mobileModal = document.querySelector(".mobal");
 mobileModal.id = "mobileModal";
-const title = cards[0].title;
+let title, skills=[], image, live, source;
+function popup (index){
+  asignValues(index);
+  document.body.appendChild(mobileModal);
+}
+
+function asignValues(index){
+  title = cards[index].title;
+  skills = cards[index].skills;
+  image = cards[index].image;
+  live = cards[index].live;
+  source = cards[index].source;
+}
+
 mobileModal.innerHTML = `
 <h3 class="works_titles">${title}</h3>
 <i id="popupxIcon" class="fas fa-times"></i>
@@ -168,4 +175,4 @@ dummy text.</p>
 
 // });
 
-document.body.appendChild(mobileModal);
+
