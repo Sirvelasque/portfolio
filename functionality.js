@@ -70,16 +70,51 @@ item1Container.addEventListener("click", toggleNavManu);
 item2Container.addEventListener("click", toggleNavManu);
 item3Container.addEventListener("click", toggleNavManu);
 
-const card = {
-  name: "project",
-  description:
-    "Lorem ipsum number 1 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  image: "img/.svg",
-  technologies: ["Ruby on rails", "css", "javaScript"],
-  live: "https://sirvelasque.github.io/Portfolio/",
-  source: "https://github.com/sirvelasque/Portfolio",
-};
+let cards = [
+    {
+      title: 'Multi-Pos Stories',
+      info: ['facebook', 'backend', '2015'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      skills: ['html', 'css', 'javascript'],
+      image: 'img/SnapshootPortfolio.svg',
+      live: 'see live',
+      source: 'see source',
+    },
+    {
+      title: 'Multi-Po Stories',
+      info: ['facebook', 'full stack dev', '2015'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      skills: ['html', 'css', 'javascript'],
+      image: 'img/SnapshootPortfolio.svg',
+      live: 'see live',
+      source: 'see source',
+    },
+    {
+      title: 'Multi-Post Stories',
+      info: ['facebook', 'backend', '2015'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      skills: ['html', 'css', 'javascript'],
+      image: 'img/SnapshootPortfolio.svg',
+      live: 'see live',
+      source: 'see source',
+    },
+    {
+      title: 'Multi-Post Stories',
+      info: ['UBER', ' Lead Developer', '2015'],
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      skills: ['html', 'css', 'javascript'],
+      image: 'img/SnapshootPortfolio.svg',
+      live: '#',
+      source: '#',
+    },
+  ];
 
+
+//
 const firstCardButton = document.getElementById("firstCardButton");
 const secondCardButton = document.getElementById("secondCardButton");
 const thirdCardButton = document.getElementById("thirdCardButton");
@@ -93,10 +128,11 @@ popupContainer1.id = "popupContainer1";
 const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
 
-let mobileModal = document.createElement("section");
+let mobileModal = document.querySelector(".mobal");
 mobileModal.id = "mobileModal";
+const title = cards[0].title;
 mobileModal.innerHTML = `
-<h3 class="works_titles">Multi-Post Stories</h3>
+<h3 class="works_titles">${title}</h3>
 <i id="popupxIcon" class="fas fa-times"></i>
 <div id="popupImageContainer"></div>
 <p id=popupText>A daily selection of privately personalized reads;no accounts or
@@ -111,6 +147,11 @@ dummy text.</p>
   <button type="button" class="project_btn">See project</button>
   <button type="button" class="project_btn">See project</button>
 `;
+
+//
+
+
+
 // firstCardButton.addEventListener('click', Function() {
 
 // });
