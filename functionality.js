@@ -69,3 +69,44 @@ hamburguer.addEventListener('click', toggleNavManu);
 item1Container.addEventListener('click', toggleNavManu);
 item2Container.addEventListener('click', toggleNavManu);
 item3Container.addEventListener('click', toggleNavManu);
+
+const card = {
+  name: 'project',
+  description:
+    'Lorem ipsum number 1 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  image: 'images/project-card-image.svg',
+  technologies: ['Ruby on rails', 'css', 'javaScript'],
+  live: 'https://luis-pomare.github.io/Portfolio/',
+  source: 'https://github.com/luis-pomare/Portfolio',
+};
+
+const firstCardButton = document.getElementById('firstCardButton');
+const secondCardButton = document.getElementById('secondCardButton');
+const thirdCardButton = document.getElementById('thirdCardButton');
+const fourthCardButton = document.getElementById('fourthCardButton');
+
+//  Creating pop up containers
+const popupContainer1 = document.createElement('section');
+const popupContainer2 = document.createElement('article');
+popupContainer1.id = 'popupContainer1';
+
+const projectImage = document.createElement('img');
+const technologiesList = document.createElement('ul');
+
+// firstCardButton.addEventListener('click', Function() {
+  
+// });
+
+// secondCardButton.addEventListener('click', Function() {
+  
+// });
+
+// thirdCardButton.addEventListener('click', Function() {
+  
+// });
+
+// fourthCardButton.addEventListener('click', Function() {
+  
+// });
+
+document.body.appendChild(popupContainer1);
