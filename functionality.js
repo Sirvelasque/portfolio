@@ -122,7 +122,7 @@ popupContainer.appendChild(mobileModal);
 
 // Create variables and x icon
 
-const exitIcon = document.createElement("div");
+const exitIcon = document.createElement('div');
 exitIcon.innerHTML = '<i id="popupxIcon" class="fas fa-times"></i>';
 exitIcon.classList.add('exitButton');
 popupContainer.appendChild(exitIcon);
