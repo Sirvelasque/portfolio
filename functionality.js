@@ -175,3 +175,22 @@ workButtons.forEach((btn, index) => {
     popup(index);
   });
 });
+// Form validation
+// Get objects
+const form = document.getElementById('form');
+const error = document.querySelector('small');
+const email = document.getElementById('email');
+
+// Put classes
+error.classList.add('errorMessage');
+
+form.addEventListener('submit', (event) => {
+  const message = [];
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    message.push('The E-mail has to be in lowercase');
+  }
+  if (message.length > 0) {
+    error.innerText = message.join(', ');
+  }
+});

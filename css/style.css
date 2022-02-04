@@ -724,6 +724,11 @@ footer {
   color: #fff;
 }
 
+.errorMessage {
+  color: #fff;
+  background-color: #e003;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     margin: 0;
@@ -893,7 +898,7 @@ footer {
   }
 
   .f_name li {
-    width: 50%;
+    width: 100%;
   }
 
   .e_text li {
