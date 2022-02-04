@@ -69,3 +69,109 @@ hamburguer.addEventListener('click', toggleNavManu);
 item1Container.addEventListener('click', toggleNavManu);
 item2Container.addEventListener('click', toggleNavManu);
 item3Container.addEventListener('click', toggleNavManu);
+
+const cards = [
+  {
+    title: 'Multi-Pos Stories',
+    description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+    skills: ['html', 'css', 'javascript'],
+    image: 'img/SnapshootPortfolio.svg',
+    live: '#',
+    source: '#',
+  },
+  {
+    title: 'Portfolio',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+    skills: ['html', 'css', 'javascript'],
+    image: 'img/SnapshootPortfolio.svg',
+    live: 'https://sirvelasque.github.io/portfolio/',
+    source: 'https://github.com/Sirvelasque/portfolio',
+  },
+  {
+    title: 'Multi-Post Stories',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+    skills: ['html', 'css', 'javascript'],
+    image: 'img/SnapshootPortfolio.svg',
+    live: '#',
+    source: '#',
+  },
+  {
+    title: 'Multi-Post Stories',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+    skills: ['html', 'css', 'javascript'],
+    image: 'img/SnapshootPortfolio.svg',
+    live: '#',
+    source: '#',
+  },
+];
+
+// save buttons in an array
+let workButtons = [];
+workButtons = document.querySelectorAll('.work-buttom');
+
+//  Creating pop up containers
+const popupContainer = document.createElement('section');
+popupContainer.id = 'popupContainer';
+const mobileModal = document.createElement('article');
+mobileModal.id = 'mobileModal';
+popupContainer.appendChild(mobileModal);
+
+// Create variables and x icon
+
+const exitIcon = document.createElement('div');
+exitIcon.innerHTML = '<i id="popupxIcon" class="fas fa-times"></i>';
+exitIcon.classList.add('exitButton');
+popupContainer.appendChild(exitIcon);
+let title;
+let description;
+let skills = [];
+let image;
+let live;
+let source;
+
+function asignValues(index) {
+  title = cards[index].title;
+  description = cards[index].description;
+  skills = cards[index].skills;
+  image = cards[index].image;
+  live = cards[index].live;
+  source = cards[index].source;
+}
+// create template after values asignment
+function templateuse() {
+  mobileModal.innerHTML = `
+<h3 class="works_titles">${title}</h3>
+<div id="popupImageContainer"><img src="${image}"></div>
+<p id="popupText">${description}</p>
+<ul id="popupTools" class="work_tools_tags">
+  <li class="tool_tag">${skills[0]}</li>
+  <li class="tool_tag">${skills[1]}</li>
+  <li class="tool_tag">${skills[2]}</li>
+</ul>
+<div class="button_container">
+  <a href="${live}"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
+  <a href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
+</div>
+`;
+}
+
+// main buttons function
+function popup(index) {
+  asignValues(index);
+  templateuse();
+  document.body.append(popupContainer);
+  exitIcon.addEventListener('click', () => {
+    document.body.removeChild(popupContainer);
+  });
+}
+
+// loop for giving buttons index to the function popup
+workButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    popup(index);
+  });
+});
