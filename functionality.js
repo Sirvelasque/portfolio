@@ -141,7 +141,7 @@ function asignValues(index) {
   live = cards[index].live;
   source = cards[index].source;
 }
-
+// create template after values asignment
 function templateuse() {
   mobileModal.innerHTML = `
 <h3 class="works_titles">${title}</h3>
@@ -169,24 +169,6 @@ function popup(index) {
   });
 }
 
-
-// create template after values asignment
-function templateuse() {
-  mobileModal.innerHTML = `
-<h3 class="works_titles">${title}</h3>
-<div id="popupImageContainer"><img src="${image}"></div>
-<p id="popupText">${description}</p>
-<ul id="popupTools" class="work_tools_tags">
-  <li class="tool_tag">${skills[0]}</li>
-  <li class="tool_tag">${skills[1]}</li>
-  <li class="tool_tag">${skills[2]}</li>
-</ul>
-<div class="button_container">
-  <a href="${live}"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
-  <a href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
-</div>
-`;
-}
 // loop for giving buttons index to the function popup
 workButtons.forEach((btn, index) => {
   btn.addEventListener('click', () => {
