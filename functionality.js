@@ -122,8 +122,8 @@ popupContainer.appendChild(mobileModal);
 
 // Create variables and x icon
 
-const exitIcon = document.createElement("div");
-exitIcon.innerHTML = `<i id="popupxIcon" class="fas fa-times"></i>`;
+const exitIcon = document.createElement(div);
+exitIcon.innerHTML = '<i id="popupxIcon" class="fas fa-times"></i>';
 exitIcon.classList.add('exitButton');
 popupContainer.appendChild(exitIcon);
 let title;
@@ -133,17 +133,6 @@ let image;
 let live;
 let source;
 
-// main buttons function
-function popup (index){
-  asignValues(index);
-  templateuse();
-  document.body.append(popupContainer);
-  exitIcon.addEventListener('click', () => {
-    document.body.removeChild(popupContainer);
-    console.log('kasld');
-  })
-}
-
 function asignValues(index) {
   title = cards[index].title;
   description = cards[index].description;
@@ -152,6 +141,35 @@ function asignValues(index) {
   live = cards[index].live;
   source = cards[index].source;
 }
+
+function templateuse() {
+  mobileModal.innerHTML = `
+<h3 class="works_titles">${title}</h3>
+<div id="popupImageContainer"><img src="${image}"></div>
+<p id="popupText">${description}</p>
+<ul id="popupTools" class="work_tools_tags">
+  <li class="tool_tag">${skills[0]}</li>
+  <li class="tool_tag">${skills[1]}</li>
+  <li class="tool_tag">${skills[2]}</li>
+</ul>
+<div class="button_container">
+  <a href="${live}"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
+  <a href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
+</div>
+`;
+}
+
+// main buttons function
+function popup(index) {
+  asignValues(index);
+  templateuse();
+  document.body.append(popupContainer);
+  exitIcon.addEventListener('click', () => {
+    document.body.removeChild(popupContainer);
+  });
+}
+
+
 // create template after values asignment
 function templateuse() {
   mobileModal.innerHTML = `
