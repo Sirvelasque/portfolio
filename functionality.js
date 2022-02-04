@@ -118,12 +118,15 @@ workButtons = document.querySelectorAll(".work-buttom");
 //  Creating pop up containers
 const popupContainer = document.createElement("section");
 popupContainer.id = "popupContainer";
-
 let mobileModal = document.createElement("article");
 mobileModal.id = "mobileModal";
 popupContainer.appendChild(mobileModal);
+
+// Create variables and x icon
+
 let exitIcon = document.createElement("div");
 exitIcon.innerHTML = `<i id="popupxIcon" class="fas fa-times"></i>`;
+exitIcon.classList.add("exitButton")
 popupContainer.appendChild(exitIcon);
 let title, description, skills=[], image, live, source;
 
