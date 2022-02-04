@@ -19,18 +19,19 @@ body {
 }
 
 .display {
+  display: flex;
   top: 0;
 }
 
 .display_none {
-  top: -140%;
+  top: -1800px;
   display: none;
 }
 
 .nav {
   display: flex;
   height: 48px;
-  width: 100%;
+  width: 95%;
 }
 
 .nav_mobile {
@@ -274,7 +275,7 @@ h2 {
 
 .top_circles {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 563px;
   left: 5px;
   top: 97px;
@@ -663,6 +664,35 @@ footer {
   color: #ebebff;
 }
 
+#popupContainer {
+  z-index: 8;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  background: rgba(25, 23, 101, 0.95);
+  width: 100%;
+  height: 100vh;
+  ;
+}
+
+#mobileModal {
+  z-index: 9;
+  background-color: #ffffff66;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 13px;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     margin: 0;
@@ -835,23 +865,6 @@ footer {
   }
 }
 
-#mobileModal {
-  background-color: #ffffff66;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 6;
-  width: 100%;
-  height: 100%;
-  min-height: fit-content;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  gap: 13px;
-}
-
 #popupxIcon {
   position: absolute;
   top: 40px;
@@ -863,8 +876,4 @@ footer {
   justify-content: center;
   width: 60%;
   height: 35%;
-}
-
-.popupTools {
-  padding-left: 10px;
 }

@@ -117,7 +117,7 @@ console.log(workButtons);
 
 //  Creating pop up containers
 const popupContainer = document.createElement("section");
-popupContainer.id = "popupContainer1";
+popupContainer.id = "popupContainer";
 
 const projectImage = document.createElement("img");
 const technologiesList = document.createElement("ul");
