@@ -665,7 +665,7 @@ footer {
 }
 
 #popupContainer {
-  left: -10px;
+  left: -5px;
   z-index: 8;
   display: flex;
   position: fixed;
@@ -675,7 +675,6 @@ footer {
   background: rgba(25, 23, 101, 0.95);
   width: 100%;
   height: 100vh;
-  ;
 }
 
 #mobileModal {
@@ -686,11 +685,12 @@ footer {
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.26);
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   width: 90%;
   height: 90%;
-  min-height: fit-content;
+  min-height: auto;
+  min-width: auto;
   align-items: center;
   text-align: center;
   padding: 20px 50px;
@@ -741,7 +741,7 @@ footer {
     padding: 20px 15px;
   }
 
-  #mobileModal h3{
+  #mobileModal h3 {
     align-self: flex-start;
     margin-top: 5px;
     margin-left: 25px;
@@ -937,13 +937,13 @@ footer {
   z-index: 9;
   position: relative;
   right: 45px;
-  top: 20px;;
-  height: fit-content;
+  top: 20px;
+  height: auto;
 }
 
 #popupImageContainer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: fit-content;
+  height: auto;
 }
