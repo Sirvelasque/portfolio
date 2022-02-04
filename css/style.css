@@ -665,11 +665,13 @@ footer {
 }
 
 #popupContainer {
+  left: -10px;
   z-index: 8;
   display: flex;
   position: fixed;
   top: 0;
-  padding: 20px;
+  justify-content: center;
+  padding: 30px 10px;
   background: rgba(25, 23, 101, 0.95);
   width: 100%;
   height: 100vh;
@@ -677,20 +679,45 @@ footer {
 }
 
 #mobileModal {
+  font-size: 16px;
+  line-height: 24px;
   z-index: 9;
-  background-color: #ffffff66;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.26);
   border: 1px solid #FFFFFF;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  width: 100%;
-  height: 100%;
+  width: 55%;
+  height: 90%;
   min-height: fit-content;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 20px 70px;
   gap: 13px;
+}
+
+#mobileModal p {
+  height: 280px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.source-btn {
+  width: 120px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.live-btn {
+  width: 100px;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media screen and (min-width: 1000px) {
@@ -866,14 +893,16 @@ footer {
 }
 
 #popupxIcon {
+  color: #fff;
+  z-index: 9;
   position: absolute;
-  top: 40px;
-  right: 50px;
+  right: 16%;
+  top: 50px;;
 }
 
 #popupImageContainer {
   align-items: center;
   justify-content: center;
-  width: 60%;
-  height: 35%;
+  width: 100%;
+  height: fit-content;
 }
