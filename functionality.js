@@ -180,6 +180,8 @@ workButtons.forEach((btn, index) => {
 const form = document.getElementById('form');
 const error = document.querySelector('small');
 const email = document.getElementById('email');
+const name = document.getElementById('name');
+const message = document.getElementById('message');
 
 // Put classes
 error.classList.add('errorMessage');
@@ -194,3 +196,12 @@ form.addEventListener('submit', (event) => {
     error.innerText = message.join(', ');
   }
 });
+let formData = { name: '', email: '', message: '' };
+
+form.addEventListener('input', () => {
+  localStorage.formData = JSON.stringify(formData);
+  formData.name = name.value;
+  formData.email = email.value;
+  formData.message = message.value;
+});
+
