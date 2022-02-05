@@ -65,7 +65,7 @@ function toggleNavManu() {
   hamburguer.classList.toggle('fa-bars');
 }
 
-hamburguer.addEventListener("click", toggleNavManu);
+hamburguer.addEventListener('click', toggleNavManu);
 item1Container.addEventListener('click', toggleNavManu);
 item2Container.addEventListener('click', toggleNavManu);
 item3Container.addEventListener('click', toggleNavManu);
@@ -90,7 +90,7 @@ const cards = [
     source: 'https://github.com/Sirvelasque/portfolio',
   },
   {
-    title: "Multi-Post Stories",
+    title: 'Multi-Post Stories',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
     skills: ['html', 'css', 'javascript'],
@@ -124,7 +124,7 @@ popupContainer.appendChild(mobileModal);
 
 const exitIcon = document.createElement('div');
 exitIcon.innerHTML = '<i id="popupxIcon" class="fas fa-times"></i>';
-exitIcon.classList.add("exitButton");
+exitIcon.classList.add('exitButton');
 popupContainer.appendChild(exitIcon);
 let title;
 let description;
@@ -198,7 +198,7 @@ form.addEventListener('submit', (event) => {
 });
 let formData = { name: '', email: '', message: '' };
 
-form.addEventListener("input", () => {
+form.addEventListener('input', () => {
   localStorage.formData = JSON.stringify(formData);
   formData.name = name.value;
   formData.email = email.value;
