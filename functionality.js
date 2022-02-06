@@ -74,7 +74,7 @@ const cards = [
   {
     title: 'Multi-Pos Stories',
     description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
     skills: ['html', 'css', 'javascript'],
     image: 'img/SnapshootPortfolio.svg',
     live: '#',
@@ -180,6 +180,8 @@ workButtons.forEach((btn, index) => {
 const form = document.getElementById('form');
 const error = document.querySelector('small');
 const email = document.getElementById('email');
+const name = document.getElementById('name');
+const message = document.getElementById('message');
 
 // Put classes
 error.classList.add('errorMessage');
@@ -194,3 +196,18 @@ form.addEventListener('submit', (event) => {
     error.innerText = message.join(', ');
   }
 });
+let formData = { name: '', email: '', message: '' };
+
+form.addEventListener('input', () => {
+  localStorage.formData = JSON.stringify(formData);
+  formData.name = name.value;
+  formData.email = email.value;
+  formData.message = message.value;
+});
+
+if (localStorage.formData) {
+  formData = JSON.parse(localStorage.formData);
+  name.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.message;
+}
