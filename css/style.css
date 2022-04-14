@@ -481,9 +481,15 @@ h2 {
 .work_img {
   min-width: 320px;
   width: 95%;
-  height: 236px;
+  height: min-content;
   background: linear-gradient(0deg, #f9f9f9, #f9f9f9);
-  margin-bottom: 20px;
+  
+}
+
+.work_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .works_titles {
@@ -812,11 +818,16 @@ footer {
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .work_img {
-    height: 100%;
+    height: 80%;
     width: 59%;
+  }
+
+  .work_img img {
+    object-fit: fill;
   }
 
   .sup_works {

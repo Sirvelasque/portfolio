@@ -72,13 +72,14 @@ item3Container.addEventListener('click', toggleNavManu);
 
 const cards = [
   {
-    title: 'Multi-Pos Stories',
+    title: 'Global Summit Page',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "<span class='description-3'>This website is a good example of a summit page made following a pre-structured design. Here you can see the main page and navigate to the about page and back to Home with the top-loft Logo. <br> The featured speakers' section is coded dynamically to be able to add new speakers without problems.</span>",
     skills: ['html', 'css', 'javascript'],
-    image: 'img/SnapshootPortfolio.svg',
+    image: 'img/projects/GlobalSubmitP.png',
     live: '#',
-    source: '#',
+    source: 'https://github.com/Sirvelasque/capstonePage',
+    imageMain: 'img/projects/GlobalSubmit.png'
   },
   {
     title: 'Portfolio',
@@ -154,7 +155,7 @@ function templateuse() {
 </ul>
 <div class="button_container">
   <a href="${live}"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
-  <a href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
+  <a target="_blank" href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
 </div>
 `;
 }
@@ -211,3 +212,10 @@ if (localStorage.formData) {
   email.value = formData.email;
   message.value = formData.message;
 }
+
+// Add picture to works
+
+const workImg = document.querySelectorAll('.work_img');
+workImg.forEach((e, i) =>{
+e.innerHTML = `<img src="${cards[i].imageMain}"></img>`;
+});
