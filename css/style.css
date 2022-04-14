@@ -773,12 +773,6 @@ footer {
     font-size: 26px;
   }
 
-  #popupImageContainer img {
-    object-fit: contain;
-    height: 35vh;
-    width: 95%;
-  }
-
   .button_container {
     flex-direction: row;
     gap: 30px;

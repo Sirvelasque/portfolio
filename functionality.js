@@ -79,7 +79,7 @@ const cards = [
     image: 'img/projects/GlobalSubmitP.png',
     live: 'https://sirvelasque.github.io/capstonePage/',
     source: 'https://github.com/Sirvelasque/capstonePage',
-    imageMain: 'img/projects/GlobalSubmit.png'
+    imageMain: 'img/projects/GlobalSubmit.png',
   },
   {
     title: 'Portfolio',
@@ -89,6 +89,7 @@ const cards = [
     image: 'img/SnapshootPortfolio.svg',
     live: 'https://sirvelasque.github.io/portfolio/',
     source: 'https://github.com/Sirvelasque/portfolio',
+    imageMain: 'img/projects/GlobalSubmit.png',
   },
   {
     title: 'Multi-Post Stories',
@@ -98,6 +99,7 @@ const cards = [
     image: 'img/SnapshootPortfolio.svg',
     live: '#',
     source: '#',
+    imageMain: 'img/projects/GlobalSubmit.png',
   },
   {
     title: 'Multi-Post Stories',
@@ -107,6 +109,7 @@ const cards = [
     image: 'img/SnapshootPortfolio.svg',
     live: '#',
     source: '#',
+    imageMain: 'img/projects/GlobalSubmit.png',
   },
 ];
 
