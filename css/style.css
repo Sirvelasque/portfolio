@@ -683,6 +683,12 @@ footer {
   height: 100vh;
 }
 
+#popupImageContainer img {
+  object-fit: contain;
+  height: 35vh;
+  width: 95%;
+}
+
 #mobileModal {
   font-size: 16px;
   line-height: 24px;
@@ -768,7 +774,7 @@ footer {
   }
 
   #popupImageContainer img {
-    object-fit: cover;
+    object-fit: contain;
     height: 35vh;
     width: 95%;
   }
