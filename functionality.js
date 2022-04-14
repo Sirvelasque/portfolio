@@ -74,7 +74,7 @@ const cards = [
   {
     title: 'Global Summit Page',
     description:
-      "<span class='description-3'>This website is a good example of a summit page made following a pre-structured design. Here you can see the main page and navigate to the about page and back to Home with the top-loft Logo. <br> The featured speakers' section is coded dynamically to be able to add new speakers without problems.</span>",
+      "<span class='description-3'>This website is a good example of a summit page made following a pre-structured design. Here you can see the main page and navigate to the about page and back to Home with the top-loft Logo. <br> The featured speakers' section is coded dynamically to be able to add new speakers without problems.<br>You can access the about page by the about button in the navigation bar, there you will find information about the organization and previews summits</span>",
     skills: ['html', 'css', 'javascript'],
     image: 'img/projects/GlobalSubmitP.png',
     live: 'https://sirvelasque.github.io/capstonePage/',
