@@ -119,11 +119,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 75px 1px;
-  position: absolute;
+  padding: 140px 1px 0 1px;
+  position: relative;
   width: 100%;
-  height: 1316.15px;
-  top: 19px;
+  height: auto;
 }
 
 .presentation {
@@ -174,13 +173,13 @@ h2 {
 }
 
 .divider_a {
-  position: absolute;
-  top: calc(50% - 240px);
+  position: relative;
 }
 
 .divider_b {
-  position: absolute;
-  top: calc(50% - 240px + 505px);
+  position: relative;
+  top: 10px
+  
 }
 
 .sup_skills {
@@ -278,7 +277,7 @@ h2 {
   width: 90%;
   height: 563px;
   left: 5px;
-  top: 97px;
+  top: 105px;
 }
 
 .middle_circles {
@@ -436,15 +435,15 @@ h2 {
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
 
-.works {
+#works {
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
+  padding: 120px 0 0 0;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 3400px;
-  top: 1175px;
+  height: auto;
+  top: 10px;
   z-index: 2;
 }
 
@@ -465,9 +464,10 @@ h2 {
 .works_container {
   width: 100%;
   margin-top: 48px;
+  margin-bottom: 48px;
   display: grid;
   grid-row-gap: 40px;
-  grid-template-rows: repeat(4, 729px);
+  grid-auto-rows: repeat(4, auto);
   grid-template-columns: 327px;
   justify-content: center;
 }
@@ -476,6 +476,7 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: space-between;
 }
 
 .work_img {
@@ -483,7 +484,6 @@ h2 {
   width: 95%;
   height: min-content;
   background: linear-gradient(0deg, #f9f9f9, #f9f9f9);
-  
 }
 
 .work_img img {
@@ -566,11 +566,9 @@ h2 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 825px;
-  top: 4520px;
+  padding: 130 0 80 0;
 }
 
 .contact_sup_text-label {
@@ -643,7 +641,7 @@ h2 {
 footer {
   width: 100%;
   position: relative;
-  top: 5390px;
+  top: 65px;
 }
 
 .divider_c {
@@ -855,19 +853,15 @@ footer {
   }
 
   .top_circles {
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 100px;
     width: 100%;
   }
 
   .middle_circles {
-    position: relative;
-    top: 150px;
+    position: absolute;
+    top: 1050px;
     width: 100%;
-  }
-
-  #contact {
-    top: 3130px;
   }
 
   .form_container {
@@ -917,7 +911,7 @@ footer {
   }
 
   footer {
-    top: 4090px;
+    
   }
 
   .sup_text {
