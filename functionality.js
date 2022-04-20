@@ -232,8 +232,10 @@ seeAll.addEventListener('click', ()=> {
 function worksDisplay(){
   const works = document.querySelector('.works');
   const bgg = document.querySelectorAll('.middle_circles')[1];
+  const bg = document.querySelectorAll('.middle_circles')[0];
   works.classList.toggle('hidden');
   bgg.classList.toggle('hidden');
+  bg.classList.toggle('hidden');
 
   const insidy = document.querySelector('#see_all');
   insidy.innerHTML =`See less <img alt="my work" src="img/arrow_d.svg" />`
