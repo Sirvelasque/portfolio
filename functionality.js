@@ -222,3 +222,19 @@ const workImg = document.querySelectorAll('.work_img');
 workImg.forEach((e, i) =>{
 e.innerHTML = `<img src="${cards[i].imageMain}"></img>`;
 });
+
+// Display all projects
+const seeAll = document.getElementById('see_all');
+seeAll.addEventListener('click', ()=> {
+  worksDisplay();
+});
+
+function worksDisplay(){
+  const works = document.querySelector('.works');
+  const bgg = document.querySelectorAll('.middle_circles')[1];
+  works.classList.toggle('hidden');
+  bgg.classList.toggle('hidden');
+
+  const insidy = document.querySelector('#see_all');
+  insidy.innerHTML =`See less <img alt="my work" src="img/arrow_d.svg" />`
+}
