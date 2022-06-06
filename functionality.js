@@ -1,4 +1,5 @@
 const hamburguer = document.getElementById('hamburguer');
+let displaying = false;
 
 // Created all elements of the menu
 const menuContainer = document.createElement('nav');
@@ -72,9 +73,19 @@ item3Container.addEventListener('click', toggleNavManu);
 
 const cards = [
   {
+    title: 'Updanime',
+    description:
+    "<span class='description-3'>In this single page website you can see 6 genres and pick one to navigate to the next area where you will find a filtered list of series with their Synopsis, a Picture and Score. If you get hooked by one you can get more details by clicking it.</span>",
+    skills: ['html', 'css', 'javascript', 'React-Redux'],
+    image: 'img/projects/Updanime.png',
+    live: 'https://629d45064bf92c00080a1368--lucky-phoenix-71c99d.netlify.app',
+    source: 'https://github.com/Sirvelasque/info-anime-webapp/tree/Asemble',
+    imageMain: 'img/projects/Updanime.png',
+  },
+  {
     title: 'Global Summit Page',
     description:
-      "<span class='description-3'>This website is a good example of a summit page made following a pre-structured design. Here you can see the main page and navigate to the about page and back to Home with the top-loft Logo. <br> The featured speakers' section is coded dynamically to be able to add new speakers without problems.<br>You can access the about page by the about button in the navigation bar, there you will find information about the organization and previews summits</span>",
+      "<span class='description-3'>This website is a good example of a summit page made following a pre-structured and responsive design. Here you can see the main page and navigate to the about page and back to Home with the top-loft Logo. <br> The featured speakers' section is coded dynamically to be able to add new speakers without problems.<br>You can access the about page by the about button in the navigation bar, there you will find information about the organization and previews summits</span>",
     skills: ['html', 'css', 'javascript'],
     image: 'img/projects/GlobalSubmitP.png',
     live: 'https://sirvelasque.github.io/capstonePage/',
@@ -82,34 +93,34 @@ const cards = [
     imageMain: 'img/projects/GlobalSubmit.png',
   },
   {
-    title: 'Portfolio',
+    title: 'Space Travelers',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'img/SnapshootPortfolio.svg',
-    live: 'https://sirvelasque.github.io/portfolio/',
-    source: 'https://github.com/Sirvelasque/portfolio',
-    imageMain: 'img/projects/GlobalSubmit.png',
-  },
-  {
-    title: 'Multi-Post Stories',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'css', 'javascript'],
-    image: 'img/SnapshootPortfolio.svg',
+      "<span class='description-3'>In this website you can navigate through the Rockets and Missions sections to resevate a rocket or join a mission with a friendly interface and a simulated profile to see you current activity on the website</span>",
+    skills: ['html', 'css', 'javascript', 'React-Redux'],
+    image: 'img/projects/space.png',
     live: '#',
     source: '#',
-    imageMain: 'img/projects/GlobalSubmit.png',
+    imageMain: 'img/projects/spaceP.png',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Math Magicians',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
+      "<span class='description-3'>In this single page website you can find a home section, a calculator and a Quote section with a clever phrase </span>",
+    skills: ['html', 'css', 'javascript', 'React'],
+    image: 'img/projects/Math.png',
+    live: 'https://intense-lowlands-78762.herokuapp.com/#/Calculator',
+    source: 'https://github.com/Sirvelasque/math_magicians',
+    imageMain: 'img/projects/Math.png',
+  },
+  {
+    title: 'BookStore',
+    description:
+      "<span class='description-3'>In this App you can add and delete books from a list that is being stored in an API by title, author and genre, and simulates reading progress</span>",
     skills: ['html', 'css', 'javascript'],
-    image: 'img/SnapshootPortfolio.svg',
-    live: '#',
-    source: '#',
-    imageMain: 'img/projects/GlobalSubmit.png',
+    image: 'img/projects/books.png',
+    live: 'https://629d7228b6d18e3860d005b0--superb-cranachan-8abd9d.netlify.app',
+    source: 'https://github.com/Sirvelasque/Bookstore',
+    imageMain: 'img/projects/books.png',
   },
 ];
 
@@ -151,13 +162,11 @@ function templateuse() {
 <h3 class="works_titles">${title}</h3>
 <div id="popupImageContainer"><img src="${image}"></div>
 <p id="popupText">${description}</p>
-<ul id="popupTools" class="work_tools_tags">
-  <li class="tool_tag">${skills[0]}</li>
-  <li class="tool_tag">${skills[1]}</li>
-  <li class="tool_tag">${skills[2]}</li>
-</ul>
+<ul id="popupTools" class="work_tools_tags">`
++ skills.map((e) => (`<li class="tool_tag">${e}</li>`)).join('')
++`</ul>
 <div class="button_container">
-  <a href="${live}"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
+  <a href="${live}" target="_blank"><button type="button" class="project_btn live-btn">See Live <i class="fas fa-broadcast-tower"></i></button></a>
   <a target="_blank" href="${source}"><button type="button" class="project_btn source-btn">See Source <i class="fab fa-github"></i></button></a>
 </div>
 `;
@@ -236,7 +245,8 @@ function worksDisplay(){
   works.classList.toggle('hidden');
   bgg.classList.toggle('hidden');
   bg.classList.toggle('hidden');
-
   const insidy = document.querySelector('#see_all');
-  insidy.innerHTML =`See less <img alt="my work" src="img/arrow_d.svg" />`
+  if (!displaying) insidy.innerHTML =`See less <img alt="my work" src="img/arrow_d.svg" />`;
+  else insidy.innerHTML =`See more projects <img alt="my work" src="img/arrow_d.svg" />`;
+  displaying = !displaying;
 }
