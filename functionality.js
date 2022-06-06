@@ -77,10 +77,10 @@ const cards = [
     description:
     "<span class='description-3'>In this single page website you can see 6 genres and pick one to navigate to the next area where you will find a filtered list of series with their Synopsis, a Picture and Score. If you get hooked by one you can get more details by clicking it.</span>",
     skills: ['html', 'css', 'javascript', 'React-Redux'],
-    image: 'img/projects/Updanime.PNG',
+    image: 'img/projects/Updanime.png',
     live: 'https://629d45064bf92c00080a1368--lucky-phoenix-71c99d.netlify.app',
     source: 'https://github.com/Sirvelasque/info-anime-webapp/tree/Asemble',
-    imageMain: 'img/projects/Updanime.PNG',
+    imageMain: 'img/projects/Updanime.png',
   },
   {
     title: 'Global Summit Page',
@@ -97,30 +97,30 @@ const cards = [
     description:
       "<span class='description-3'>In this website you can navigate through the Rockets and Missions sections to resevate a rocket or join a mission with a friendly interface and a simulated profile to see you current activity on the website</span>",
     skills: ['html', 'css', 'javascript', 'React-Redux'],
-    image: 'img/projects/space.PNG',
+    image: 'img/projects/space.png',
     live: '#',
     source: '#',
-    imageMain: 'img/projects/spaceP.PNG',
+    imageMain: 'img/projects/spaceP.png',
   },
   {
     title: 'Math Magicians',
     description:
       "<span class='description-3'>In this single page website you can find a home section, a calculator and a Quote section with a clever phrase </span>",
     skills: ['html', 'css', 'javascript', 'React'],
-    image: 'img/projects/Math.PNG',
+    image: 'img/projects/Math.png',
     live: 'https://intense-lowlands-78762.herokuapp.com/#/Calculator',
     source: 'https://github.com/Sirvelasque/math_magicians',
-    imageMain: 'img/projects/Math.PNG',
+    imageMain: 'img/projects/Math.png',
   },
   {
     title: 'BookStore',
     description:
       "<span class='description-3'>In this App you can add and delete books from a list that is being stored in an API by title, author and genre, and simulates reading progress</span>",
     skills: ['html', 'css', 'javascript'],
-    image: 'img/projects/books.PNG',
+    image: 'img/projects/books.png',
     live: 'https://629d7228b6d18e3860d005b0--superb-cranachan-8abd9d.netlify.app',
     source: 'https://github.com/Sirvelasque/Bookstore',
-    imageMain: 'img/projects/books.PNG',
+    imageMain: 'img/projects/books.png',
   },
 ];
 
