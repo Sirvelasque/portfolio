@@ -78,7 +78,7 @@ const cards = [
     "<span class='description-3'>In this single page website you can see 6 genres and pick one to navigate to the next area where you will find a filtered list of series with their Synopsis, a Picture and Score. If you get hooked by one you can get more details by clicking it.</span>",
     skills: ['html', 'css', 'javascript', 'React-Redux'],
     image: 'img/projects/Updanime.png',
-    live: 'https://629d45064bf92c00080a1368--lucky-phoenix-71c99d.netlify.app',
+    live: 'https://lucky-phoenix-71c99d.netlify.app/',
     source: 'https://github.com/Sirvelasque/info-anime-webapp/tree/Asemble',
     imageMain: 'img/projects/Updanime.png',
   },
